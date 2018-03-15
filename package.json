@@ -1,0 +1,27 @@
+{
+  "name": "deepEqual",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "deepEqual": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "watch": "tsc --watch & nodemon dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.22",
+    "chai": "^4.1.2",
+    "mocha": "3.4.2",
+    "ts-node": "^5.0.1",
+    "tsc": "1.20150623.0",
+    "typescript": "2.3.3"
+  },
+  "dependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
